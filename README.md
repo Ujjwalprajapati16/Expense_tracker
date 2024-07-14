@@ -86,6 +86,13 @@ A live demo of the application can be found [here](#).
 
 6. Open your browser and navigate to `http://localhost:3000`.
 
+## Usage
+
+1. Register or log in to your account.
+2. Add income and expense entries using the respective forms.
+3. View your financial summary on the dashboard.
+4. Navigate between different sections using the navigation menu.
+
 
 ## Contributing
 
@@ -99,9 +106,4 @@ This project is licensed under the MIT License.
 
 Ujjwal Prajapati - [ujjwalprajapati154@gmail.com](mailto:ujwalprajapati154@gmail.com)
 
-## Usage
 
-1. Register or log in to your account.
-2. Add income and expense entries using the respective forms.
-3. View your financial summary on the dashboard.
-4. Navigate between different sections using the navigation menu.
