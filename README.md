@@ -86,6 +86,19 @@ A live demo of the application can be found [here](#).
 
 6. Open your browser and navigate to `http://localhost:3000`.
 
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+Ujjwal Prajapati - [ujjwalprajapati154@gmail.com](mailto:ujwalprajapati154@gmail.com)
+
 ## Usage
 
 1. Register or log in to your account.
