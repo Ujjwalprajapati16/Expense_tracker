@@ -40,15 +40,16 @@ exports.getExpense = async (req, res) => {
     }
 }
 
-exports.deleteExpense = async (req, res ) => {
-    const {id} = req.params;
-    ExpenseSchema.findByIdAndDelete(id)
-        .then((income) => {
-            if(!income) return res.status(404).json({message: "Expense not found."});
-            res.status(200).json({message: "Deleted successfully"});
-        })
-        .catch((err) => {
-            console.error(err);
-            res.status(500).json({message: "Server Error"});
-        });
-}
+exports.deleteExpense = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const expense = await ExpenseSchema.findByIdAndDelete(id);
+        if (!expense) {
+            return res.status(404).json({ message: 'Expense not found' });
+        }
+        res.status(200).json({ message: 'Expense Deleted' });
+    } catch (err) {
+        console.error(err);  // Log the error for debugging purposes
+        res.status(500).json({ message: 'Server Error' });
+    }
+};
